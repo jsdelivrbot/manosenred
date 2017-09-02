@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/scripts.js"></script>
+  <title>Necesidades</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="col-md-6">
+      <h2>Ingresar necesidad</h2>
+      <form>
+        <div class="form-group">
+          <label for="titulo">Titulo</label>
+          <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo">
+        </div>
+        <div class="form-group">
+          <label for="prioridad">Prioridad</label>
+          <select id="prioridad" name="prioridad" class="form-control">
+            <option selected value="alta">Alta</option>
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="descripcion">Descripcion</label>
+          <input type="text" class="form-control" id="descripcion" name="descripcion" aria-describedby="Descripcion" placeholder="Ingrese descripcion">
+        </div>
+        <div class="form-group">
+          <label for="institucion">Institucion</label>
+          <select id="institución" name="institucion" class="form-control">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="locacion">Locacion</label>
+          <input id="locacion" name="locacion" type="text" class="form-control" id="" aria-describedby="Locacion" placeholder="Direccion">
+        </div>
+        <label for="estado" >Estado</label>
+        <div class="form-group">
+          <input id="radio1" select name="estado" value="abierto" type="radio" class="">
+          <span class="">Abierto</span>
+          <input id="radio2" name="estado" value="cerrado" type="radio" class="">
+          <span class="">Cerrado</span>
+        </div>
+        <div class="form-group">
+          <label for="">Contacto</label>
+          <div class="form-group row justify-content-end">
+            <label for="nombre" class="offset-sm-2 col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+          </div>
+          <div class="form-group row justify-content-end">
+            <label for="email" class="offset-sm-2 col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="email" id="email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="form-group row justify-content-end">
+            <label for="celular" class="offset-sm-2 col-sm-2 col-form-label">Celular</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="celular" id="celular" placeholder="11 5555-5555">
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
